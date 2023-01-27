@@ -1,3 +1,11 @@
 header{
     background-image: url(../img/foto_fondo.webp);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.datos_personales{
+    border: 1px solid #eeecec;
+    padding: 20px 30px;
+    border-radius: 30px;
 }

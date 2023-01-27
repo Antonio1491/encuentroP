@@ -8,158 +8,282 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/index.css">
 </head>
-<body>
-    <header class="container py-5 text-center">
+<body class="bg-light">
+    <header class="container-fluid py-5 text-center">
         <img class="d-block mx-auto mb-4" src="./src/img/logotipo.png" alt="" width="120" height="90">
         <h2>Encuentro Nacional de Líderes de Parques Urbanos y Espacios Públicos</h2>
         <h3>Bases de Pre-registro</h3>
     </header>
-    <main class="container">
-        <div >
-            <div class="row">
-                <div class="col-4">
-                    <label for="" class="form-label">Nombres:</label>
-                    <input type="text" id="nombres" class="form-control">
-                </div>
-                <div class="col-4">
-                    <label for="" class="form-label">Apellido Paterno:</label>
-                    <input type="text" id="nombres" class="form-control">
-                </div>
-                <div class="col-4">
-                    <label for="" class="form-label">Apellido Materno:</label>
-                    <input type="text" id="nombres" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">Correo:</label>
-                    <input type="text" id="correo" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">Correo Secundario/Asistente:</label>
-                    <input type="text" id="correoSecundario" class="form-control">
-                </div>
-                
-                <div class="col-6">
-                    <label for="" class="form-label">Cargo:</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Seleccionar...</option>
-                        <option value="">Director</option>
-                        <option value="">Gerente</option>
-                        <option value="">Personal Administrativo</option>
-                        <option value="">Personal Técnico</option>
-                    </select>
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">Área:</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Seleccionar...</option>
-                        <option value="">Mantenimiento y Operaciones</option>
-                        <option value="">Administración y Finanzas</option>
-                        <option value="">Recreación y Eventos</option>
-                        <option value="">Comunicación y Marketing</option>
-                        <option value="" id="">Ningúno de los anteriores</option>
-                    </select>
-                </div>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Periodo restante del cargo:</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                            1-3 años
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                            3-6 años
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                            +6 años
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                            Indefinido
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="col-6">
-                    <label for="" class="form-label">WhatsApp:</label>
-                    <input type="number" id="whatsapp" class="form-control">
-                </div>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Eres miembro actual de la ANPR México:</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                            Sí
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                            No
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Llevarás algún familiar de acompañante:</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                            Sí
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                            No
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="col-6">
-                    <label for="" class="form-label">¿A cuantos acompañantes llevarás?:</label>
-                    <input type="number" id="acompanantes" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">Linkedin:</label>
-                    <input type="text" id="linkedin" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">¿Cuáles son tus razones u objetivos al asistir a este evento?:</label>
-                    <input type="text" id="linkedin" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">¿Tienes alguna condición de salud?:</label>
-                    <input type="text" id="linkedin" class="form-control">
-                </div>
-                <div class="col-6">
-                    <label for="" class="form-label">¿por qué medio se enteró usted de este encuentro?</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Seleccionar...</option>
-                        <option value="">Redes Sociales</option>
-                        <option value="">Página Web</option>
-                        <option value="">WhatsApp</option>
-                        <option value="">Correo Electrónico</option>
-                        <option value="">Webinar</option>
-                        <option value="">A través de un colega</option>
-                        <option value="" id="">Ningúno de los anteriores</option>
-                    </select>
-                </div>
+    <main class="container mb-4">
+        <div class="row my-5">
+            <p>El Encuentro Nacional de Grandes Parques (ENGP) organizado por la ANPR México sirve como plataforma de capacitación sobre administración, manejo ambiental, comunicación, participación ciudadana y planeación especializada para tomadores de decisiones del espacio público en nuestras ciudades.
+            </p>
+            <p>Son convocados todos los directores y miembros de los equipos operativos de grandes parques urbanos a nivel nacional. Al ser un programa educativo de alto nivel y con cupo limitado, es indispensable que cada interesado se registre para formar parte del proceso de admisión y selección y participar en el ENGP</p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <p><strong>¿Quién puede asistir?</strong></p>
+                <ul>
+                    <li>Personal directivo</li>
+                    <li>Gerentes</li>
+                    <li>Personal técnico</li>
+                    <li>Personal administrativo</li>
+                </ul>
             </div>
+            <div class="col-9">
+                <p><strong>¿Cuál es el proceso y fechas de aplicación?</strong></p>
+                <ol>
+                    <li>Revisa las bases de la convocatoria y llena el formulario pre-registro con tus datos. Febrero y Marzo</li>
+                    <li>Espera los resultados de selección. Marzo</li>
+                    <li>Realiza tu proceso de confirmación y pago. Marzo</li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                <p><strong>Inversión por persona</strong></p>
+                <ul>
+                    <li>Miembros ANPR:</li>
+                    <li>No miembros:</li>
+                    <li>Acompañante:</li>
+                </ul>
+            </div>
+            <div class="col-9">
+                <p><strong>¿Cuáles son los beneficios de asistir?</strong></p>
+                <ul>
+                    <li>Aprenderás sobre la administración de parques de diferentes ciudades y su gestión integral.</li>
+                    <li>Obtendrás conocimientos sobre el desarrollo de una estrategia de creación de tu plan de manejo.</li>
+                    <li>Intercambiarás experiencias con otros directivos de parques sobre casos prácticos en temas de mantenimiento, gestión, financiación y operación.</li>
+                    <li>Reforzarás lazos de intercambio entre altos directivos.</li>
+                    <li>Obtendrás un diploma de capacitación profesional de especialización.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-4">
+                <p><strong>¿Qué incluye?</strong></p>
+                <ul>
+                    <li>Kit de bienvenida.</li>
+                    <li>3 noches y 4 días en Hotel Reef Yucatán.</li>
+                    <li>Alimentos y Snacks (incluye bebidas alcohólicas).</li>
+                    <li>Acceso a contenido: Talleres, Charlas, Sesiones.</li>
+                    <li>Transporte (Hotel- Aeropuerto , Aeropuerto - Hotel).</li>
+                    <li>Diploma de Curso a Academia Parques</li>
+                    <li>Diploma de participación al evento</li>
+                    <li>Material y papelería</li>
+
+                </ul>
+            </div>
+            <div class="col-3">
+                <p><strong>NO incluye</strong></p>
+                <ul>
+                    <li>Vuelos</li>
+                    <li>Gastos Personales</li>
+                    <li>Viáticos</li>
+                    <li>Transporte personal</li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <picture>
+                    <img src="./src/img/foto_encuentro.jpg" alt="" width="100%">
+                </picture>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <p><strong>Acerca del formulario de Pre-Registro:</strong></p>
+            <p>El formulario de Pre-Registro al ENGP será utilizado para la evaluación y selección de los asistentes al evento. Esto con la finalidad de la máxima experiencia de los y las participantes y del alto nivel de especialización del contenido de las actividades.</p>
+            <p>Cada participante (exceptuando acompañantes) deberán completar su formulario de pre-registro, llenando todos los campos correspondientes de información personal y de la organización perteneciente.</p>
+            <p>Los datos personales servirán para datos demográficos e identificación detallada de cada participante. Los datos de la organización se utilizarán para hacer un filtrado y conocimiento más profundo del área, extensión y necesidades de la misma.</p>
+            <p>Para tener una mejor probabilidad en la selección de participación se recomienda completar todos los campos del formulario, incluyendo C.V, motivos para asistir, logo de la organización, entre otros.</p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <p><strong>Aceptación de las bases</strong></p>
+                <ul>
+                    <li>El hecho de participar en el presente evento supone la plena aceptación del contenido de estas bases.</li>
+                    <li>La organización se reserva el derecho a realizar todos los cambios que se estimen convenientes para el buen funcionamiento del ENGP.</li>
+                    <li>La organización se reserva el derecho a evaluar los formularios de registro y realizar
+                        la selección de los participantes de acuerdo a criterios propios que promuevan y
+                        aseguren la calidad óptima del evento y contenido.</li>
+                    <li>La organización no se hará responsable de costos como viáticos, vuelos y gastos personales de los participantes.</li>
+                    <li>Los alimentos y bebidas incluidos en el evento son responsabilidad del Hotel Reef Telchac, Yucatán y es responsabilidad de cada participante informar al hotel de cualquier restricción alimentaria.</li>
+                    <li>El costo como persona acompañante no incluye el acceso a las actividades de contenido del ENGP.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="my-5 datos_personales">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="mb-3">Datos Personales:</h4>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <label for="" class="form-label">Nombres:</label>
+                        <input type="text" id="nombres" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="" class="form-label">Apellido Paterno:</label>
+                        <input type="text" id="nombres" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="" class="form-label">Apellido Materno:</label>
+                        <input type="text" id="nombres" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <label for="" class="form-label">Correo:</label>
+                        <input type="text" id="correo" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="" class="form-label">Correo Secundario/Asistente:</label>
+                        <input type="text" id="correoSecundario" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="" class="form-label">WhatsApp:</label>
+                        <input type="number" id="whatsapp" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <label for="" class="form-label">Cargo:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccionar...</option>
+                            <option value="">Director</option>
+                            <option value="">Gerente</option>
+                            <option value="">Personal Administrativo</option>
+                            <option value="">Personal Técnico</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="" class="form-label">Área:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccionar...</option>
+                            <option value="">Mantenimiento y Operaciones</option>
+                            <option value="">Administración y Finanzas</option>
+                            <option value="">Recreación y Eventos</option>
+                            <option value="">Comunicación y Marketing</option>
+                            <option value="" id="">Ningúno de los anteriores</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="" class="form-label">Nombre oficial del cargo:</label>
+                        <input type="text" id="puesto" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <fieldset class="row mb-3">
+                        <div class="col-6">
+                            <p class="col-form-label col-6 pt-0">Periodo restante en el cargo:</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                1-3 años
+                                </label>
+                            </div>
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                3-6 años
+                                </label>
+                            </div>
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                +6 años
+                                </label>
+                            </div>
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                Indefinido
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="row mb-3 mb-6">
+                        <legend class="col-form-label col-6 pt-0">Eres miembro actual de la ANPR México:</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Sí
+                                </label>
+                            </div>
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                No
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="row mb-3 ">
+                        <legend class="col-form-label col-6 pt-0">Llevarás algún familiar de acompañante:</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Sí
+                                </label>
+                            </div>
+                            <div class="form-check form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                No
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="" class="form-label">¿Cuáles son tus razones u objetivos al asistir a este evento?:</label>
+                        <input type="text" id="linkedin" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="form-label">¿Por qué medio se enteró usted de este encuentro?</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccionar...</option>
+                            <option value="">Redes Sociales</option>
+                            <option value="">Página Web</option>
+                            <option value="">WhatsApp</option>
+                            <option value="">Correo Electrónico</option>
+                            <option value="">Webinar</option>
+                            <option value="">A través de un colega</option>
+                            <option value="" id="">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-6">
+                    <div class="col-6">
+                        <label for="" class="form-label">¿A cuantos acompañantes llevarás?:</label>
+                        <input type="number" id="acompanantes" class="form-control">
+                    </div>
+                    <div class="col-6">
+                        <label for="" class="form-label">¿Tienes alguna condición de salud?:</label>
+                        <input type="text" id="linkedin" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-6">
+                    <div class="col-6">
+                        <label for="" class="form-label">Linkedin:</label>
+                        <input type="text" id="linkedin" class="form-control">
+                    </div>                    
+                </div>    
+            </form>
         </div>
     </main>
     <footer>
-        
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
