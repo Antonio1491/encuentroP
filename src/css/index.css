@@ -3,9 +3,42 @@ header{
     background-position: center;
     background-size: cover;
     color: white;
+    text-shadow: #000000 4px 2px 10px;
+}
+header img{
+    filter: drop-shadow(2px 2px 10px black);
 }
 .datos_personales{
     border: 1px solid #eeecec;
     padding: 20px 30px;
     border-radius: 30px;
 }
+.drop-shadow {
+    position: relative;
+    width: 100%;
+  }
+  
+  .drop-shadow:before,
+  .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+  }
+ 
+.drop-shadow:before,
+.drop-shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 31px;
+  left: 10px;
+  width: 80%;
+  height: 30%;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-3deg);
+}
+.drop-shadow:after{
+    right: 10px;
+    left: auto;
+    transform: rotate(3deg);
+   }
